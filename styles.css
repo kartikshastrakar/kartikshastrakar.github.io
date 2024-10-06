@@ -1,4 +1,19 @@
-/* Add some basic styling to the header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .header {
     background-color: #333;
     color: #fff;
@@ -6,16 +21,32 @@
     text-align: center;
 }
 
-.header h1 {
-    margin: 0;
-}
+.header .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom:  10px
 
-.header h2 {
-    margin: 0;
+.header .title {
     font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-/* Style the left panel */
+.header .location {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.header .contact {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.header .social {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
 .left-panel {
     float: left;
     width: 30%;
@@ -24,78 +55,94 @@
     border: 1px solid #ddd;
 }
 
-.left-panel h2 {
-    margin-top: 0;
+.left-panel .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-/* Style the right panel */
+.left-panel .summary {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.left-panel .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-panel .skills-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
 .right-panel {
     float: right;
     width: 65%;
     padding: 20px;
 }
 
-.right-panel h2 {
-    margin-top: 0;
-}
-
-/* Style the project section */
-.project {
-    margin-bottom: 20px;
-}
-
-.project h3 {
-    margin-top: 0;
-}
-
-/* Style the skills section */
-.skills {
-    margin-bottom: 20px;
-}
-
-.skills ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.skills li {
+.right-panel .section-title {
+    font-size: 18px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-/* Style the education section */
-.education {
-    margin-bottom: 20px;
-}
-
-.education h3 {
-    margin-top: 0;
-}
-
-/* Style the certificates section */
-.certificates {
-    margin-bottom: 20px;
-}
-
-.certificates ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.certificates li {
+.right-panel .experience-title {
+    font-size: 16px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-/* Add some basic styling to the footer */
-footer {
-    clear: both;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+.right-panel .experience-description {
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
-footer p {
-    margin: 0;
+/* Animations */
+
+.header {
+    animation: fadeIn 2s;
 }
+
+.left-panel {
+    animation: fadeIn 2s;
+}
+
+.right-panel {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    .left-panel {
+        width: 100%;
+    }
+    .right-panel {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+    .left-panel {
+        padding: 10px;
+    }
+    .right-panel {
+        padding: 10px;
+    }
+}
+
