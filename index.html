@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kartik Shastrakar - Data Scientist Resume">
+    <title>Kartik Shastrakar | Digital Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="animated-header">Kartik Shastrakar</h1>
+        <h2>Data Scientist | AI Specialist</h2>
+        <p>Email: <a href="mailto:kartikshastrakar04@gmail.com">kartikshastrakar04@gmail.com</a> | Phone: 9970711597</p>
+    </header>
+
+    <section id="about">
+        <h3 class="fade-in">About Me</h3>
+        <p>I’m a data scientist passionate about solving business problems through AI, machine learning, and big data analytics. I help drive business growth through innovation and data-driven insights.</p>
+    </section>
+
+    <section id="skills">
+        <h3 class="fade-in">Skills</h3>
+        <ul>
+            <li>Python, R, SQL</li>
+            <li>Machine Learning, Deep Learning</li>
+            <li>Natural Language Processing (NLP)</li>
+            <li>Data Visualization (Tableau, Power BI)</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h3 class="fade-in">Professional Experience</h3>
+        <div class="job">
+            <h4>Data Scientist | SA Technologies | 2022 - Present</h4>
+            <p>Developed predictive models to optimize production and enhance decision-making processes for Tata Motors.</p>
+        </div>
+        <div class="job">
+            <h4>Subject Matter Expert | Chegg Inc. | 2020 - 2022</h4>
+            <p>Provided mentorship and solutions in the field of machine learning and AI.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h3 class="fade-in">Projects</h3>
+        <div class="project">
+            <h4>Project 1: Predictive Maintenance for Tata Motors</h4>
+            <p>Built a machine learning model to predict equipment failure and optimize maintenance scheduling, reducing downtime by 20%.</p>
+            <button onclick="showMore(this)">View Details</button>
+            <div class="project-details hidden">
+                <p><strong>Tools:</strong> Python, Scikit-learn, TensorFlow</p>
+                <p><strong>Details:</strong> The model used historical data and implemented predictive algorithms to anticipate failure, helping save costs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h3 class="fade-in">Education</h3>
+        <p>B-Tech in Mechanical Engineering | Sandip University | 2018</p>
+        <p>Diploma in Product Design | CADD Centre | 2016</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kartik Shastrakar. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to toggle project details
+        function showMore(button) {
+            const projectDetails = button.nextElementSibling;
+            if (projectDetails.classList.contains('hidden')) {
+                projectDetails.classList.remove('hidden');
+                button.innerText = 'Hide Details';
+            } else {
+                projectDetails.classList.add('hidden');
+                button.innerText = 'View Details';
+            }
+        }
+    </script>
+</body>
+</html>
